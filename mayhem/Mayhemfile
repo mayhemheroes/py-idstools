@@ -1,0 +1,9 @@
+project: py-idstools
+target: fuzz-snort
+testsuite:
+    - file://mayhem/testsuite
+
+cmds:
+  - cmd: /src/mayhem/fuzz_snort.py
+    libfuzzer: true
+    timeout: 12
